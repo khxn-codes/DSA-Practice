@@ -5,15 +5,18 @@ using namespace std;
 int gcd(int a,int b)
 {
   int res=min(a,b);
-  while(res>0)
+  while(a!=b)
   {
-    if(a%res==0 && b%res==0)
+    if(a>b)
     {
-      break;
+      a=a-b;
     }
-    res--;
+    else
+    {
+      b=b-a;
+    }
+    return a; //Both will be same at the end so return any one of them
   }
-  return res;
 }
 int main()
 {
