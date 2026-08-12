@@ -4,7 +4,6 @@
 using namespace std;
 int gcd(int a,int b)
 {
-  int res=min(a,b);
   while(a!=b)
   {
     if(a>b)
